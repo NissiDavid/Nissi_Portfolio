@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    font-family: Arial;
+
+    background:linear-gradient(135deg,#fbc2eb,#a6c1ee);
+    }
+
+    .hero{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 48px;
+       }
+
+    button{
+        background: #7c3aed;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+         border-radius: 10px ;
+         cursor: pointer;
+        }
+
+        section{
+            padding: 50px;
+            text-align: center;
+        }
+
+        .card{
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            width: 300px;
+            margin: auto;
+        }
