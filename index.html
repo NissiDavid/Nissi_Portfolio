@@ -1,27 +1,455 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nissi Portfolio</title>
-        <link rel="stylesheet"
-        href="style.css"
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nissi David — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
-    <div class=""hero">
-     <h1>Hi, I'm Nissi David</h1>
-     <p>BCA student | Beginner Web Developer | Python & Flask Learner </p>
-     <button 
-     onclick="document.getElementById('projects').scrollIntoView();">
-    View My Projects
-    </button>"  
-    </div>
-     <section id="projects">
-        <h2>My Projects</h2>
 
-        <div class="card"
-        <h3>MoodWise</h3>
-        <p>AI- inspired mood-based study planner built using Flask.</p>
-     </div>
+<div id="cur"></div>
+<div id="cur-dot"></div>
+<div id="ptcl"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nl">ND</div>
+  <ul class="nm">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nr">
+    <button class="tbtn" id="thm">☀ Light</button>
+    <a href="#" class="bo" style="font-size:.76rem;padding:.38rem .95rem;" download>↓ Resume</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="wrap">
+    <div class="hi">
+      <div>
+        <div class="htag">✦ BCA Student · Flask Developer · Creative Tech</div>
+        <h1 class="hname">Hi, I'm<br/><em>Nissi David</em></h1>
+        <p class="hsub">Python &amp; Flask Developer &nbsp;•&nbsp; Creative Tech Enthusiast</p>
+        <p class="hbio">Building meaningful and aesthetic digital experiences through creativity, technology, and real-world projects.</p>
+        <div class="tw"><span id="tw-text"></span><span class="cb">_</span></div>
+        <div class="hbtns">
+          <a href="#projects" class="bp">View Projects →</a>
+          <a href="https://github.com/NissiDavid" target="_blank" class="bo">⌥ GitHub</a>
+          <a href="#contact" class="bo">Contact Me</a>
+        </div>
+        <div class="vpill">
+          <span class="vdot"></span>
+          <span id="vcnt">—</span> visitors have stopped by
+        </div>
+      </div>
+      <div class="hv">
+        <div class="orb o1"><div class="odot"></div></div>
+        <div class="orb o2"><div class="odot"></div></div>
+        <div class="avt">ND</div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="sl">Who I am</span>
+      <h2 class="st">Not just a student.<br/>A creator in progress.</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="ag">
+      <div class="at reveal">
+        <p>Hi, I'm <strong>Nissi</strong> — a BCA student from <strong>Bengaluru</strong> passionate about blending creativity with technology. I enjoy building beginner-friendly web applications, designing aesthetic user interfaces, and creating projects that solve real-world problems in a relatable way.</p>
+        <p>My journey in tech started with <strong>curiosity</strong> and gradually became a passion for learning, experimenting, and independently building projects. I believe technology should not only function well but also create <strong>meaningful user experiences.</strong></p>
+        <p>Currently, I'm exploring <strong>Flask development, frontend design, deployment, GitHub project management,</strong> and beginner full-stack development while continuously improving my skills through hands-on learning.</p>
+        <p>Faith keeps me grounded. Creativity keeps me going. And the belief that <strong>I'm always becoming</strong> — never just arrived — keeps me humble and hungry.</p>
+        <div class="vtags">
+          <span class="vtag">✦ Curious Learner</span>
+          <span class="vtag">🎨 Design-Minded</span>
+          <span class="vtag">🐍 Python Dev</span>
+          <span class="vtag">💡 Creative Thinker</span>
+          <span class="vtag">🙏 Faith-Driven</span>
+          <span class="vtag">⚡ Builder Mindset</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <blockquote class="aq">"Blending creativity with technology — learning, building, and growing one project at a time."</blockquote>
+        <div class="astats">
+          <div class="asc card"><span class="anum">2+</span><span class="albl">Projects Built</span></div>
+          <div class="asc card"><span class="anum">Elite</span><span class="albl">NPTEL 2026</span></div>
+          <div class="asc card"><span class="anum">2025</span><span class="albl">Internship @ Nexplace</span></div>
+          <div class="asc card"><span class="anum">∞</span><span class="albl">Ideas In Progress</span></div>
+        </div>
+        <div class="edu-card card" style="margin-top:1.2rem;">
+          <div class="edu-deg">Bachelor of Computer Applications (BCA)</div>
+          <div class="edu-col">St. Claret College Autonomous, Bengaluru</div>
+          <div class="edu-yr">2024 – Present</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="sl">What I bring</span>
+      <h2 class="st">Skills &amp; Superpowers</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="skroot">
+
+      <div class="skcat card reveal">
+        <span class="skcat-label">Programming Languages</span>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Python</span><span class="ski-pct">85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Java</span><span class="ski-pct">65%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">C</span><span class="ski-pct">60%</span></div><div class="bar"><div class="bar-fill" data-w="60"></div></div></div>
+      </div>
+
+      <div class="skcat card reveal">
+        <span class="skcat-label">Web Development</span>
+        <div class="ski"><div class="ski-top"><span class="ski-name">HTML &amp; CSS</span><span class="ski-pct">88%</span></div><div class="bar"><div class="bar-fill" data-w="88"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Flask</span><span class="ski-pct">78%</span></div><div class="bar"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Jinja Templates</span><span class="ski-pct">72%</span></div><div class="bar"><div class="bar-fill" data-w="72"></div></div></div>
+      </div>
+
+      <div class="skcat card reveal">
+        <span class="skcat-label">Tools &amp; Platforms</span>
+        <div class="ski"><div class="ski-top"><span class="ski-name">GitHub</span><span class="ski-pct">80%</span></div><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">VS Code</span><span class="ski-pct">90%</span></div><div class="bar"><div class="bar-fill" data-w="90"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Render (Deployment)</span><span class="ski-pct">65%</span></div><div class="bar"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Canva</span><span class="ski-pct">85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="ski"><div class="ski-top"><span class="ski-name">Figma (Learning)</span><span class="ski-pct">40%</span></div><div class="bar"><div class="bar-fill" data-w="40"></div></div></div>
+      </div>
+
+      <div class="skcat card reveal">
+        <span class="skcat-label">Technical Concepts</span>
+        <div class="soft-grid">
+          <span class="soft-pill">Routing</span>
+          <span class="soft-pill">Form Handling</span>
+          <span class="soft-pill">Conditional Logic</span>
+          <span class="soft-pill">Deployment</span>
+          <span class="soft-pill">Frontend Design</span>
+          <span class="soft-pill">Responsive UI</span>
+          <span class="soft-pill">GitHub Repos</span>
+          <span class="soft-pill">Debugging</span>
+        </div>
+      </div>
+
+      <div class="skcat card reveal" style="grid-column:1/-1;max-width:580px;margin:0 auto;width:100%;">
+        <span class="skcat-label">Soft Skills</span>
+        <div class="soft-grid">
+          <span class="soft-pill">💬 Communication</span>
+          <span class="soft-pill">💡 Creative Thinking</span>
+          <span class="soft-pill">🎤 Presentation Skills</span>
+          <span class="soft-pill">🧩 Problem Solving</span>
+          <span class="soft-pill">🔄 Adaptability</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="sl">What I've built</span>
+      <h2 class="st">Projects that matter</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="pjgrid">
+
+      <!-- MoodWise -->
+      <div class="pjcard reveal">
+        <div class="pjvis v-mw">
+          <span class="vemoji">🧠</span>
+          <span class="vlbl">MoodWise · Flask Web App</span>
+        </div>
+        <div class="pjinfo">
+          <span class="pbadge">✦ Completed</span>
+          <h3 class="ptitle">MoodWise</h3>
+          <p class="psubtitle">AI-Based Study Planner &amp; Motivation Website</p>
+          <p class="pdesc">MoodWise is a Flask-based web application designed to provide users with <strong style="color:var(--text)">personalized study plans and motivational support</strong> based on their mood and available study time. It started as a personal idea — what if an app could actually understand how you feel and help you study smarter?</p>
+          <div class="pfeatures">
+            <div class="pfeatures-label">Features</div>
+            <ul class="pflist">
+              <li>Mood-based study suggestions</li>
+              <li>Personalized motivation messages</li>
+              <li>Dynamic output generation</li>
+              <li>User-friendly interface</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+          <div class="pstack">
+            <span class="stag">Python</span>
+            <span class="stag">Flask</span>
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">Jinja2</span>
+          </div>
+          <div class="plinks">
+            <a href="https://github.com/NissiDavid/MoodWise_Project" target="_blank" class="lgh">⌥ GitHub</a>
+            <a href="https://github.com/NissiDavid/MoodWise_Project" target="_blank" class="ldm">→ View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SafeAura -->
+      <div class="pjcard reveal">
+        <div class="pjvis v-sa">
+          <span class="vemoji">🛡️</span>
+          <span class="vlbl">SafeAura · Ongoing</span>
+        </div>
+        <div class="pjinfo">
+          <span class="pbadge">🔭 In Progress</span>
+          <h3 class="ptitle">SafeAura</h3>
+          <p class="psubtitle">Women Safety &amp; Emergency Assistance Platform</p>
+          <p class="pdesc">SafeAura is a safety-focused web application aimed at helping women access emergency assistance and safety tools <strong style="color:var(--text)">quickly and efficiently</strong>. A project built with purpose — because personal safety shouldn't be a privilege.</p>
+          <div class="pfeatures">
+            <div class="pfeatures-label">Planned Features</div>
+            <ul class="pflist">
+              <li>Emergency SOS system</li>
+              <li>Trusted contact alerts</li>
+              <li>Safety chatbot</li>
+              <li>Clean and modern UI</li>
+              <li>Location-based support</li>
+            </ul>
+          </div>
+          <div class="pstack">
+            <span class="stag">Python</span>
+            <span class="stag">Flask</span>
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">JavaScript</span>
+          </div>
+          <div class="plinks">
+            <span class="cs">◎ Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="pjcard reveal">
+        <div class="pjvis v-pf">
+          <span class="vemoji">✨</span>
+          <span class="vlbl">Personal Portfolio · This site</span>
+        </div>
+        <div class="pjinfo">
+          <span class="pbadge">🌐 Live</span>
+          <h3 class="ptitle">Personal Portfolio</h3>
+          <p class="psubtitle">Personal Brand Website</p>
+          <p class="pdesc">A personal portfolio website showcasing my projects, skills, certifications, GitHub profile, and learning journey. Designed with an aesthetic dark theme, glassmorphism cards, animations, and a personal touch — because I believe <strong style="color:var(--text)">how you present your work matters as much as the work itself.</strong></p>
+          <div class="pfeatures">
+            <div class="pfeatures-label">Highlights</div>
+            <ul class="pflist">
+              <li>Projects &amp; GitHub profile</li>
+              <li>Skills &amp; Certifications</li>
+              <li>Learning journey timeline</li>
+              <li>Dark / light mode</li>
+              <li>Custom cursor &amp; animations</li>
+            </ul>
+          </div>
+          <div class="pstack">
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">JavaScript</span>
+          </div>
+          <div class="plinks">
+            <span class="cs">◎ You're on it!</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ JOURNEY ══ -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="sl">The story so far</span>
+      <h2 class="st">My Journey</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="tl">
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2024</div>
+          <div class="tlt">Started BCA at St. Claret College</div>
+          <div class="tld">Opened my first Python file. Wrote "Hello World". Thought it was magic. Still do.</div>
+        </div>
+      </div>
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2024</div>
+          <div class="tlt">Discovered Flask &amp; Web Development</div>
+          <div class="tld">Built my first web app. Broke it 47 times. Fixed it 48 times. Pure joy.</div>
+        </div>
+      </div>
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2025</div>
+          <div class="tlt">Internship at Nexplace Info</div>
+          <div class="tld">Stepped into a real professional environment. Learned communication, teamwork, and industry culture hands-on.</div>
+        </div>
+      </div>
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2026</div>
+          <div class="tlt">Built MoodWise — first meaningful project</div>
+          <div class="tld">Merged technology with emotional intelligence. Made something people could actually feel and use.</div>
+        </div>
+      </div>
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2026</div>
+          <div class="tlt">NPTEL Elite Certification</div>
+          <div class="tld">Proved to myself that structured learning + consistency = real results. Elite percentile.</div>
+        </div>
+      </div>
+
+      <div class="tli">
+        <div class="tldot"></div>
+        <div class="tlc card">
+          <div class="tly">2026 →</div>
+          <div class="tlt">Building SafeAura &amp; What Comes Next</div>
+          <div class="tld">Building with purpose. Learning every single day. Turning ideas into real-world projects.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ ACHIEVEMENTS ══ -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="sl">Proof of work</span>
+      <h2 class="st">Certifications &amp; Experience</h2>
+      <div class="sline"></div>
+    </div>
+    <div class="cg">
+      <div class="cc card reveal">
+        <div class="ci">🏅</div>
+        <div>
+          <div class="cn">NPTEL Elite Certification</div>
+          <div class="co">IIT / NPTEL · 2026</div>
+          <div class="cd">Successfully completed an NPTEL course and achieved Elite certification through consistent performance and top-percentile assessment scores.</div>
+        </div>
+      </div>
+      <div class="cc card reveal">
+        <div class="ci">💼</div>
+        <div>
+          <div class="cn">Internship — Nexplace Info</div>
+          <div class="co">Industry Training · 2025</div>
+          <div class="cd">Gained real-world exposure to professional environments, communication skills, and practical industry working culture.</div>
+        </div>
+      </div>
+      <div class="cc card reveal">
+        <div class="ci">🛠️</div>
+        <div>
+          <div class="cn">Workshops &amp; Bootcamps</div>
+          <div class="co">Various · Ongoing</div>
+          <div class="cd">Attended hands-on workshops in Python, web development, and UI design fundamentals to keep learning beyond the classroom.</div>
+        </div>
+      </div>
+      <div class="cc card reveal">
+        <div class="ci">🤝</div>
+        <div>
+          <div class="cn">Volunteering &amp; College Clubs</div>
+          <div class="co">St. Claret College · Active</div>
+          <div class="cd">Active participant in college tech clubs, community events, and volunteering activities — building people skills alongside tech skills.</div>
+        </div>
+      </div>
+      <div class="cc card reveal">
+        <div class="ci">⚡</div>
+        <div>
+          <div class="cn">Hackathons</div>
+          <div class="co">Upcoming</div>
+          <div class="cd">Actively preparing to compete. Building the skills, the projects, and the confidence. Watch this space.</div>
+        </div>
+      </div>
+      <div class="cc card reveal">
+        <div class="ci">🎓</div>
+        <div>
+          <div class="cn">BCA — St. Claret College</div>
+          <div class="co">Autonomous · 2024–Present</div>
+          <div class="cd">Bachelor of Computer Applications from a reputed autonomous institution in Bengaluru, combining theory with real-world project work.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cw">
+      <div class="sh reveal">
+        <span class="sl">Let's connect</span>
+        <h2 class="st">I'd love to<br/>hear from you ✦</h2>
+        <div class="sline"></div>
+      </div>
+      <p class="cintro reveal">Whether you want to collaborate on a project, offer an opportunity, discuss an idea, or just say hi — my inbox is always open. I'm especially excited about meaningful work at the intersection of technology, design, and people.</p>
+      <div class="clinks reveal">
+        <a href="https://github.com/NissiDavid" target="_blank" class="clink">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/nissi-david" target="_www.linkedin.com/in/nissi-david-292489371" class="clink">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:nissidavid2007@gmail.com" class="clink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          Email
+        </a>
+        
+      </div>
+      <div class="cebox card reveal">
+        <p>Prefer email? Reach me directly at</p>
+        <div class="cemail">nissidavid2007@gmail.com</div>
+      </div>
+      <p class="tagline reveal">"Turning ideas into real-world projects." ✦</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed &amp; built with 💜 by <span>Nissi David</span> &nbsp;·&nbsp; Bengaluru, India &nbsp;·&nbsp; 2026</p>
+  <p style="margin-top:.4rem;font-size:.68rem;opacity:.6;">Built from scratch — no templates, just craft and curiosity.</p>
+</footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
